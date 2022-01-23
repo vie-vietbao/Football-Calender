@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".Fragment.HomeFragment">
+
+    <ImageView
+        android:background="@drawable/logo_app"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"></ImageView>
+
+    <TextView
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="20dp"
+        android:text="@string/app_name"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="120dp"
+        android:background="@drawable/bg_today"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="55dp"
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgFootball"
+                android:layout_width="62dp"
+                android:layout_height="62dp"
+                android:src="@drawable/logo_football"></ImageView>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/tvToday"
+                    android:text="@string/txt_today"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="18sp"
+                    android:textColor="@color/black"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+
+                 <TextView
+                    android:text="19/12/2021"
+                    android:layout_marginTop="5dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"></TextView>
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_marginTop="40dp"
+            android:layout_marginBottom="50dp"
+            android:background="@drawable/bg_search"
+            android:weightSum="10"
+            android:layout_width="270dp"
+            android:layout_height="35dp">
+            <EditText
+                android:hint="@string/edt_search"
+                android:layout_weight="10"
+                android:padding="5dp"
+                android:layout_marginLeft="5dp"
+                android:background="@drawable/bg_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></EditText>
+
+            <ImageView
+                android:background="@drawable/ic_search_black"
+                android:padding="5dp"
+                android:layout_marginRight="5dp"
+                android:layout_gravity="center"
+                android:layout_width="30dp"
+                android:layout_height="30dp"></ImageView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="400dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvTournament"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:numColumns="1"></androidx.recyclerview.widget.RecyclerView>
+    </RelativeLayout>
+
+
+</FrameLayout>

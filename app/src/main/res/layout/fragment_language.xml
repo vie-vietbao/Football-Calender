@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_app"
+    tools:context=".SettingScreen.LanguageFragment">
+
+    <ImageView
+        android:id="@+id/imgBack"
+        android:src="@drawable/ic_arrow_back_black"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="35dp"
+        android:layout_width="28dp"
+        android:layout_height="28dp"></ImageView>
+
+    <TextView
+        android:text="@string/action_setting"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="75dp"
+        android:layout_marginLeft="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/bg_settings"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="38dp"
+                android:layout_height="38dp"
+                android:layout_gravity="center"
+                android:background="@drawable/ic_account_white"></ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="10dp"
+                android:text="@string/txt_account"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                android:textStyle="bold"></TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/white"></ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/txt_language"
+                android:textColor="@color/white"></TextView>
+
+            <!--            <ExpandableListView-->
+            <!--                android:id="@+id/exListView"-->
+            <!--                android:layout_marginLeft="20dp"-->
+            <!--                android:layout_marginTop="5dp"-->
+            <!--                android:dividerHeight="0dp"-->
+            <!--                android:divider="@color/light_black"-->
+            <!--                android:scrollbars="none"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"></ExpandableListView>-->
+
+            <ListView
+                android:id="@+id/lvSettingObj"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:divider="@color/light_black"
+                android:scrollbars="none"></ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</FrameLayout>

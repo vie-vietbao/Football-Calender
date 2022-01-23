@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:id="@+id/lnlTournament"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_weight="9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgClub1"
+                android:src="@drawable/chelsea"
+                android:layout_gravity="center"
+                android:layout_width="28dp"
+                android:layout_height="28dp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvClub1"
+                android:text="Chelsea"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/tvScore1"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:weightSum="10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/imgClub2"
+                android:src="@drawable/chelsea"
+                android:layout_gravity="center"
+                android:layout_width="28dp"
+                android:layout_height="28dp"></ImageView>
+
+            <TextView
+                android:id="@+id/tvClub2"
+                android:text="Chelsea"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="10"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+
+            <TextView
+                android:id="@+id/tvScore2"
+                android:text="0"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"></TextView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:background="@color/black"
+        android:layout_width="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_height="match_parent"></ImageView>
+
+    <TextView
+        android:id="@+id/tvResult"
+        android:text="End"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></TextView>
+
+
+
+</LinearLayout>
